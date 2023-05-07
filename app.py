@@ -274,4 +274,6 @@ def process_video(video_url: str) -> Tuple[Dict[float, Tuple[float, float, str]]
 '''
 if __name__ == "__main__":
     remove_pycache()
-    app.run(debug=True, port=65500)
+    port = int(os.environ.get('PORT', 65500))
+    debug_mode = os.environ.get('DEBUG_MODE', 'False').lower() == 'true'
+    app.run(host='0.0.0.0', port=port, debug=debug_mode)
