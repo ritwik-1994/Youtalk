@@ -1,9 +1,7 @@
 certifi==2022.12.7
-faster_whisper==0.4.1
 Flask==2.2.3
 Flask_Cors==3.0.10
 langchain==0.0.161
-moviepy==1.0.3
 openai==0.27.2
 Requests==2.30.0
 youtube_transcript_api==0.5.0
